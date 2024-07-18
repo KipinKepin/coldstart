@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.40.3",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "connect-session-sequelize": "^7.1.7",
+    "cors": "^2.8.5",
+    "cosine-similarity": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "fs": "^0.0.1-security",
+    "mathjs": "^13.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.1",
+    "node-pickle": "^0.0.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "picklejs": "^0.101.0",
+    "sequelize": "^6.37.3"
+  }
+}

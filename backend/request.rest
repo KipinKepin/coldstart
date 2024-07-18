@@ -1,0 +1,89 @@
+### Create User
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "cobaregis",
+    "email": "regis@gmail.com",
+    "password": "111111",
+    "confPassword": "111111",
+    "role": "user"
+}
+
+### get all users
+GET http://localhost:5000/users
+
+### get user by id
+GET http://localhost:5000/users/66afbe07-97bd-454a-9afd-eb4054f90cfa
+
+### update user
+PATCH http://localhost:5000/users/66afbe07-97bd-454a-9afd-eb4054f90cfa
+Content-Type: application/json
+
+{
+    "name": "updated pertama",
+    "email": "pertamaupdate@gmail.com",
+    "password": "654321",
+    "confPassword": "654321",
+    "role": "user"
+}
+
+### Delete user
+GET http://localhost:5000/users
+
+### Login admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+### Login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "pertamaupdate@gmail.com",
+    "password": "654321"
+}
+
+### get me
+GET http://localhost:5000/me
+
+### logout
+DELETE http://localhost:5000/logout
+
+/// preferences
+###
+POST http://localhost:5000/preferences
+Content-Type: application/json
+
+{
+    "age": "40 and above",
+    "fitnessLevel": "Good",
+    "exerciseFrequency": "1 to 2 times a week",
+    "exerciseDuration": "30 minutes",
+    "balanceDiet": "Not Always",
+    "motivation": "I want to be fit"
+}
+
+### get preferences
+GET http://localhost:5000/preferences/
+
+### get recommendation
+GET http://localhost:5000/recommendations/
+
+### update preferences
+PATCH http://localhost:5000/preferences/e825e70f-9bb0-497c-9f04-925e45313170
+Content-Type: application/json
+
+{
+    "age": "40 and above",
+    "fitnessLevel": "Good",
+    "exerciseFrequency": "Everyday",
+    "exerciseDuration": "1 hour",
+    "balanceDiet": "No",
+    "motivation": "I want to increase muscle mass and strength"
+}

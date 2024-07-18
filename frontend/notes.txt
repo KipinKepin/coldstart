@@ -1,0 +1,11 @@
+if user is not admin
+    tampilkan rekomendasi user berdasarkan inputan preferensi terakhir
+    hide tombol rekomendasi
+else
+    tampilkan tombol rekomendasi
+    tampilkan tabel yang berisi preferensi beserta rekomendasi
+
+if user is user
+    di tabel preferensi tidak ada rekomendasi
+else
+    tampilkan rekomendasi
